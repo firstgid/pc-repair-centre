@@ -1,0 +1,63 @@
+<div class="contact-form">
+
+<%= form_tag 'MAILTO:mcjdzi@gmail.com', method: 'post', enctype: 'text/plain' do %>
+<!-- form class="form-horizontal"-->
+  <fieldset>
+    <legend>Legend</legend>
+
+<div class="form-group">
+  <!--label class="control-label" for="inputDefault">Imie/Nick</label>
+  <input class="form-control" id="inputDefault" type="text">
+-->
+  <%= label_tag :imie, 'Imie/Nick', class: "control-label" %>
+  <%= text_field_tag :imie, '', class: "form-control" %>
+</div>
+
+<div class="form-group">
+  <!--label class="control-label" for="inputDefault">Imie/Nick</label>
+  <input class="form-control" id="inputDefault" type="text">
+-->
+  <%= label_tag :email, 'Email', class: "control-label" %>
+  <%= text_field_tag :email, '', class: "form-control" %>
+</div>
+
+<div class="form-group">
+  <!--label class="control-label" for="inputDefault">Temat</label>
+  <input class="form-control" id="inputDefault" type="text">
+-->
+  <%= label_tag :subject, 'Temat', class: "control-label" %>
+  <%= text_field_tag :subject, '', class: "form-control" %>
+</div>
+
+<div class="form-group">
+  <!--
+  <label class="control-label" for="inputDefault">Nr Telefonu</label>
+  <input class="form-control" id="inputDefault" type="text">
+  -->
+  <%= label_tag :phone, 'Nr Telefonu', class: "control-label" %>
+  <%= text_field_tag :phone, '', class: "form-control" %>
+</div>
+
+    <div class="form-group">
+      <!--label for="textArea" class="col-lg-2 control-label">Treść Wiadomości</label>
+      -->
+      <%= label_tag :message, "Treść Wiadomości", class: "col-lg-2 control-label" %>
+      <div class="col-lg-10">
+        <!--textarea class="form-control" rows="4" id="textArea"></textarea>
+        -->
+        <%= text_area_tag :message, '', size: "24x4", class: "form-control" %>
+        <span class="help-block">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="col-lg-10 col-lg-offset-2">
+        <button type="reset" class="btn btn-default">Cancel</button>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </fieldset>
+<!--/form-->
+<% end %>
+
+</div>
