@@ -1,27 +1,39 @@
 <div class="welcome">
+
+<div style="width: 80%">
   <h1>Jesteśmy specjalistami od PCtów, Laptopów, Maców i odzyskiwania danych</h1>
   <h2>Zadzwoń do nas: 600 490 955</h2>
 </div>
 
+</div><!-- /welcome -->
+
+<div id="min-services">
+
 <h3>Nasze usługi</h3>
-<ul>przykładowa lista naszych usług <%= link_to 'pokaż wszystko', '#' %>
-  <li>Brak obrazu</li>
-  <li>Odzyskiwanie danych</li>
-  <li>Przywracanie ustawień fabrycznych</li>
-  <li>Transfer danych</li>
-  <li>Usuwanie Spyware</li>
-  <li>Problemy z drukarką</li>
-  <li>Problemy z ładowaniem</li>
+<p>przykładowa lista naszych usług <%= link_to 'pokaż wszystko', service_path %></p>
+
+<% lis = 'col-md-4 col-xs-6'%>
+
+<ul class="services">
+  <li class="<%= lis %>">Brak obrazu</li>
+  <li class="<%= lis %>">Odzyskiwanie danych</li>
+  <li class="<%= lis %>">Przywracanie ustawień fabrycznych</li>
+  <li class="<%= lis %>">Transfer danych</li>
+  <li class="<%= lis %>">Usuwanie Spyware</li>
+  <li class="<%= lis %>">Problemy z drukarką</li>
+  <li class="<%= lis %>">Problemy z ładowaniem</li>
 </ul>
 
-<p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/MJXww8aizAM" frameborder="0" allowfullscreen></iframe>
-</p>
+</div>
 
-<p>
-  Nasi zadowoleni klienci
-  <p>
-  Mogę jednoznacznie stwierdzić, że to jest najbardziej odpowiedni serwis w Czyżynach w Krakowie jeśli chodzi o naprawę komputerów. Naprawiają szybko i efektywnie, a przy tym są bardzo mili. Podczas duletniego korzystania z ich usług podczas różnorodnych zadań, nie mam do nich żadnych zastrzeżeń. Jak najbardziej polecam!
-  <p>Tomasz Kowalski</p>
-  </p>
-</p>
+<div id="video">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MJXww8aizAM" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<div id="one-comment">
+<h3>Nasi zadowoleni klienci</h3>
+<blockquote>
+  <p class="quote">Mogę jednoznacznie stwierdzić, że to jest najbardziej odpowiedni serwis w Czyżynach w Krakowie jeśli chodzi o naprawę komputerów. Naprawiają szybko i efektywnie, a przy tym są bardzo mili. Podczas duletniego korzystania z ich usług podczas różnorodnych zadań, nie mam do nich żadnych zastrzeżeń. Jak najbardziej polecam!
+  <p clas="name">Tomasz Kowalski</p>
+</blockquote>
+</div>

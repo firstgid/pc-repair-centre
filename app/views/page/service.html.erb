@@ -1,25 +1,10 @@
 <div class="services">
 
-<ul class="services">Nasze usługi:
-  <li>Brak obrazu</li>
-  <li>Odzyskiwanie danych</li>
-  <li>Przywracanie ustawień fabrycznych</li>
-  <li>Windows Vista, 7, 8, 10</li>
-  <li>Naprawa telefonów komórkowych</li>
+Nasze usługi:
 
-  <li>Transfer danych</li>
-  <li>Usuwanie Spyware</li>
-  <li>iPhone / iPad / iPod</li>
-  <li>Naprawa Mac-ów</li>
-
-  <li>Naprawa Tabletów</li>
-  <li>Instalowanie oprogramowania</li>
-
-  <li>Problemy z drukarką</li>
-  <li>Problemy z ładowaniem</li>
-  <li>Mac OS X</li>
-  <li>Upgrade</li>
-  <li>Problemy z Audio</li>
+<ul class="services">
+<% @lis.each do |li| %>
+  <li class="col-md-4 col-xs-6 full"><%= li %></li>
+<% end %>
 </ul>
-
 </div>

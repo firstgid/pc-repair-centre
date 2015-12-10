@@ -3,24 +3,68 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 footer{
-//  border: 5px solid green;
-//  clear: left;
+//  z-index: 1001;
 //  position: absolute;
-//  z-index: 1;
-  bottom: 0%;
-  width: 100%;
-  background: #000;
+//  bottom: 0%;
+//  width: 100%;
+  //background: #3B3C36;
+//  color: white;
+//  font-size: 0.75em;
+//  height: 150px;
+//  padding: 10px;
+//  height: 20%;
+}
+
+div.panel-footer{
+  background-color: #1B1B1B;
   color: white;
-  font-size: 0.75em;
-  height: 50px;
-  padding: 10px;
 }
 
 p.name{
-  //font-size: 0.625em;
   font-weight: bold;
 }
 
 p.quote{
   font-style: italic;
+}
+
+ul.services{
+  li.full{
+    background: transparent url('tick.png') no-repeat scroll left center / 16px auto;
+    list-style: outside none none;
+    text-indent: 25px;
+    line-height: 50px;
+  }
+  li{
+    background: transparent url('tick.png') no-repeat scroll left center / 16px auto;
+    list-style: outside none none;
+    text-indent: 25px;
+    line-height: 25px;
+  }
+}
+
+//index
+
+div.welcome{
+  text-align: center;
+  height: 220px;
+  background: transparent url('win-mac2.png') no-repeat scroll 90% center / 110px auto;
+}
+
+div#min-services{
+  height: 150px;
+}
+
+div#one-comment{
+  margin-top: 15px;
+}
+
+div#video{
+  margin: 50px 0px 50px 0px;
+}
+
+//about
+
+div#about{
+  height: 630px;
 }
