@@ -1,9 +1,13 @@
-<div class="contact-form">
+<div id="contact-form">
+
+<div id="form-wstep">
+Skontaktuj się z nami używając poniższego formularza,
+a my postaramy się odpisać najszybciej jak to tylko możliwe.
+</div>
 
 <%= form_tag 'MAILTO:mcjdzi@gmail.com', method: 'post', enctype: 'text/plain' do %>
 <!-- form class="form-horizontal"-->
-  <fieldset>
-    <legend>Legend</legend>
+<fieldset>
 
 <div class="form-group">
   <!--label class="control-label" for="inputDefault">Imie/Nick</label>
@@ -38,26 +42,24 @@
   <%= text_field_tag :phone, '', class: "form-control" %>
 </div>
 
-    <div class="form-group">
+<div class="form-group">
       <!--label for="textArea" class="col-lg-2 control-label">Treść Wiadomości</label>
       -->
-      <%= label_tag :message, "Treść Wiadomości", class: "col-lg-2 control-label" %>
-      <div class="col-lg-10">
+<%= label_tag :message, "Wiadomość" %>
         <!--textarea class="form-control" rows="4" id="textArea"></textarea>
         -->
-        <%= text_area_tag :message, '', size: "24x4", class: "form-control" %>
-        <span class="help-block">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
-      </div>
-    </div>
-
-    <div class="form-group">
-      <div class="col-lg-10 col-lg-offset-2">
-        <button type="reset" class="btn btn-default">Cancel</button>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </div>
-    </div>
-  </fieldset>
-<!--/form-->
-<% end %>
+<%= text_area_tag(:message, "Hi, nice site", size: "24x6", style: "width: 467px; height: 129px;") %>
 
 </div>
+
+<div class="form-group">
+  <div class="col-lg-10 col-lg-offset-2">
+    <button type="reset" class="btn btn-default">Cancel</button>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+</div>
+</fieldset>
+
+<% end %>
+
+</div><!-- /contact-form -->

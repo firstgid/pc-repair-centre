@@ -5,6 +5,7 @@ RSpec.describe "page/index", type: :view do
     render
 
     expect(rendered).to have_css('h3', 'Nasze usługi')
-    expect(rendered).to have_css('p', 'Tomasz Kowalski')
+    expect(rendered).to have_css('blockquote p.name', 'Tomasz Kowalski')
+    expect(rendered).to have_css('div#video iframe')
   end
 end

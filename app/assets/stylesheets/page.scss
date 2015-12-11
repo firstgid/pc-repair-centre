@@ -2,19 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-footer{
-//  z-index: 1001;
-//  position: absolute;
-//  bottom: 0%;
-//  width: 100%;
-  //background: #3B3C36;
-//  color: white;
-//  font-size: 0.75em;
-//  height: 150px;
-//  padding: 10px;
-//  height: 20%;
-}
-
 div.panel-footer{
   background-color: #1B1B1B;
   color: white;
@@ -26,6 +13,7 @@ p.name{
 
 p.quote{
   font-style: italic;
+  text-align: justify;
 }
 
 ul.services{
@@ -52,7 +40,8 @@ div.welcome{
 }
 
 div#min-services{
-  height: 150px;
+  height: 200px;
+  padding: 10px;
 }
 
 div#one-comment{
@@ -67,4 +56,51 @@ div#video{
 
 div#about{
   height: 630px;
+}
+
+//services
+
+div#services{
+  height: 630px;
+}
+
+//comments
+
+h2#zklienci{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+h3#opinie{
+  margin-bottom: 30px;
+}
+
+//contact
+
+div#contact{
+  height: 630px;
+}
+
+h2#kontakt{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+div#form-wstep{
+  margin-bottom: 15px;
+}
+
+div#contact-form{
+  float: left;
+  width: 470px;
+  margin-right: 25px;
+}
+
+div#ct-table{
+  float: left;
+  width: 40%;
+  table tbody tr{
+    th{padding: 15px;}
+    td{padding: 15px;}
+  }
 }
