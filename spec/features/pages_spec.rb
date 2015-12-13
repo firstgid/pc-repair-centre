@@ -33,5 +33,32 @@ RSpec.feature "Pages", type: :feature do
       expect(current_url).to eq(contact_url)
     end
 
+    it 'in _footer' do
+      visit root_url
+
+      expect(page.body).to have_css('a', :text => 'Site by')
+      click_link 'Site by'
+      expect(page).to have_title('REPAIR CENTRE')
+    end
   end
+
+  describe 'form' do
+    it 'in contact.' do
+      visit contact_url
+
+      email = 'mariusz1@onet.pl'
+      message = 'Witam. Ile kosztuje wymiana ramu do laptopa HP XXX?'
+
+      fill_in 'imie',     :with => 'mariusz'
+      fill_in 'email',    :with => email
+      fill_in 'subject',  :with => 'naprawa komputera'
+      fill_in 'phone',    :with => '600 700 900'
+      fill_in 'message',  :with => message
+
+      expect(page).to have_content(message)
+
+      click_on 'Anuluj'
+    end
+  end
+
 end
