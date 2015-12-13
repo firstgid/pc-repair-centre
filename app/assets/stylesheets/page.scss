@@ -16,6 +16,10 @@ p.quote{
   text-align: justify;
 }
 
+div.bigger-font{
+  font-size: 1.125em;
+}
+
 ul.services{
   li.full{
     background: transparent url('tick.png') no-repeat scroll left center / 16px auto;
@@ -58,13 +62,31 @@ div#about{
   height: 630px;
 }
 
+h2#h2ab{
+  margin-bottom: 20px;
+}
+
+div#bigger-font{
+  font-size: 1.125em;
+  line-height: 2.0;
+  padding: 15px 0px;
+}
 //services
 
 div#services{
   height: 630px;
 }
 
+h2#services{
+  margin-bottom: 20px;
+  text-align: center;
+}
+
 //comments
+
+div#comments{
+  margin-bottom: 50px;
+}
 
 h2#zklienci{
   text-align: center;
@@ -72,13 +94,16 @@ h2#zklienci{
 }
 
 h3#opinie{
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+  line-height: 1.5;
+
 }
 
 //contact
 
 div#contact{
   height: 630px;
+  margin-bottom: 100px;
 }
 
 h2#kontakt{

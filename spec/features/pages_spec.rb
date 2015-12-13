@@ -17,4 +17,21 @@ RSpec.feature "Pages", type: :feature do
       expect(current_url).to eq(comments_url)
     end
   end
+
+  describe "urls" do
+    it "on index should work" do
+      visit root_url
+
+      click_link "pokaż wszystko"
+      expect(current_url).to eq(service_url)
+    end
+
+    it "in komentarze should work" do
+      visit comments_url
+
+      click_link 'Skontaktuj się'
+      expect(current_url).to eq(contact_url)
+    end
+
+  end
 end
