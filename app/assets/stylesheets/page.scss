@@ -60,10 +60,13 @@ div#video{
 
 div#about{
   height: 630px;
+  margin-bottom: 75px;
+  width: 90%;
 }
 
 h2#h2ab{
-  margin-bottom: 20px;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
 div#bigger-font{
@@ -75,6 +78,7 @@ div#bigger-font{
 
 div#services{
   height: 630px;
+  margin-bottom: 75px;
 }
 
 h2#services{
@@ -85,7 +89,7 @@ h2#services{
 //comments
 
 div#comments{
-  margin-bottom: 50px;
+  margin-bottom: 75px;
 }
 
 h2#zklienci{
@@ -96,7 +100,6 @@ h2#zklienci{
 h3#opinie{
   margin-bottom: 50px;
   line-height: 1.5;
-
 }
 
 //contact
@@ -107,7 +110,7 @@ div#contact{
 }
 
 h2#kontakt{
-  text-align: center;
+  padding-left: 50px;
   margin-bottom: 50px;
 }
 
@@ -117,7 +120,7 @@ div#form-wstep{
 
 div#contact-form{
   float: left;
-  width: 470px;
+  width: 370px;
   margin-right: 50px;
 }
 
