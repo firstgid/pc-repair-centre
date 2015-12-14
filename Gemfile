@@ -18,9 +18,9 @@ group :development, :test do
   gem 'rspec-rails',  "3.2.1"
 end
 
-#group :production do
-#  gem 'rails_12factor', '0.0.2'
-#end
+group :production do
+  gem 'rails_12factor', '0.0.2'
+end
 
 group :test do
   gem "capybara",     "2.4"
